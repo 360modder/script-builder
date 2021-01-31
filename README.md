@@ -2,6 +2,8 @@
 
 Script Builder is an android app to build cleo scripts in android
 
+App is build with python, kivy and kivymd
+
 ## Supported Features
 
 - Decompiling
