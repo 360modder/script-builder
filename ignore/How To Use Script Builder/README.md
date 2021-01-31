@@ -24,7 +24,7 @@
 ## 8. A file named cleo_script.txt will be generated and do not rename it
 ![Step 8](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step8.jpg)
 
-## 9. Delete this line if you want to compile from script builder or correct it
+## 9. Open cleo_script.txt with any text editor and delete this line if you want to compile from script builder or correct it
 ![Step 9](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step9.jpg)
 
 ## 10. Write your script but do not delete first two lines
