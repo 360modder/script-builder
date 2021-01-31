@@ -15,7 +15,11 @@ Script Builder is an android app to build cleo scripts in android
 
 ## Downloads
 
+- [Latest APK](https://github.com/360modder/script-builder/releases/download/v0.1-beta/scriptbuilder-0.1-armeabi-v7a-release-optimized-signed.apk)
+- [Other Arch APKs](https://github.com/360modder/script-builder/releases/tag/v0.1-beta)
+- [Debug APKs](https://github.com/360modder/script-builder/releases/download/v0.1-beta/scriptbuilder-0.1-debug-apks.zip)
 - [Sanny Builder Documentation](https://github.com/360modder/script-builder/raw/main/ignore/Sanny%20Builder%20Documentation.zip)
+- [Source Code](https://github.com/360modder/script-builder/archive/v0.1-beta.zip)
 
 ## Dependencies
 
