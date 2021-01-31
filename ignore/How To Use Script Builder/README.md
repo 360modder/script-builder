@@ -18,29 +18,29 @@
 ## 6. Click on decompile button
 ![Step 6](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step6.jpg)
 
-## 7. You see some logs
+## 7. You will see some logs
 ![Step 7](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step7.jpg)
 
 ## 8. A file name cleo_script.txt will be generated
 ![Step 8](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step8.jpg)
 
-## 9. Delete this line you want to compile from script builder
+## 9. Delete this line if you want to compile from script builder
 ![Step 9](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step9.jpg)
 
 ## 10. Write your script but do not delete first two lines
 ![Step 10](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step10.jpg)
 
-## 11. Get a cleo script
+## 11. Click on compile button
 ![Step 11](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step11.jpg)
 
-## 12. Get a cleo script
+## 12. You will see some logs
 ![Step 12](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step12.jpg)
 
-## 13. Get a cleo script
+## 13. A file named generated.csa will be generated
 ![Step 13](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step13.jpg)
 
-## 14. Get a cleo script
+## 14. Click on download button to download template csa file
 ![Step 14](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step14.jpg)
 
-## 15. Get a cleo script
+## 15. You can also search opcodes
 ![Step 15](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step15.jpg)
