@@ -3,7 +3,7 @@
 [![madewithpython](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/360modder)
 
 [![Total Downloads](https://img.shields.io/github/downloads/360modder/script-builder/total.svg)](https://github.com/360modder/script-builder/releases/)
-
+[![Latest Version](https://img.shields.io/github/release/360modder/script-builder.svg)](https://github.com/360modder/script-builder/releases/)
 Script Builder is an android app to build cleo scripts in android
 
 App is build with python, kivy and kivymd
