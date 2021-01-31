@@ -27,5 +27,6 @@ Script Builder is an android app to build cleo scripts in android
 
 ## Badges
 
+[![opensource](https://forthebadge.com/images/badges/open-source.svg)](https://github.com/360modder)
 [![madewithpython](https://forthebadge.com/images/badges/made-with-python.svg)](https://github.com/360modder)
 [![builtforandroid](https://forthebadge.com/images/badges/built-for-android.svg)](https://github.com/360modder)
