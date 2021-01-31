@@ -36,7 +36,7 @@
 ## 12. You will see some logs
 ![Step 12](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step12.jpg)
 
-## 13. A file named generated.csa will be generated and do not rename it
+## 13. A file named generated.csa will be generated and rename it as per your choice
 ![Step 13](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step13.jpg)
 
 ## 14. Click on download button to download template csa file
