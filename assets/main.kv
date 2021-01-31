@@ -1,0 +1,148 @@
+#:import BoxLayout kivy.uix.boxlayout.BoxLayout
+#:import ScreenManager kivy.uix.screenmanager.ScreenManager
+#:import MDRectangleFlatButton kivymd.uix.button.MDRectangleFlatButton
+#:import MDList kivymd.uix.list.MDList
+#:import MDCheckbox kivymd.uix.selectioncontrol.MDCheckbox
+
+
+<CSFolder>
+    orientation: "vertical"
+    spacing: "12dp"
+    size_hiny_y: None
+    height: "40dp"
+
+    MDTextField:
+        id: enter_folder
+        hint_text: "/storage/emulated/0/"
+        on_text: app.save_user_cs_folder(self.text)
+
+
+ScreenManager:
+    HomeScreen:
+    SearchOpcodes:
+    CsTerminalScreen:
+    SettingScreen:
+
+
+<HomeScreen>:
+    name: "home"
+
+    MDRaisedButton:
+        text: "Decompile"
+        pos_hint: {"center_x": 0.5, "center_y": 0.6}
+        on_release: app.user_decompile()
+
+    MDRaisedButton:
+        text: "Compile"
+        pos_hint: {"center_x": 0.5, "center_y": 0.4}
+        on_release: app.user_compile()
+        
+    BoxLayout:
+        orientation: "vertical"
+        MDToolbar:
+            title: "Script Builder"
+            elevation: 10
+            right_action_items: [["download", lambda x:  app.download_template()], ["file", lambda x:  app.user_cs_prompt()], ["dots-vertical", lambda x: app.app_menu()]]
+        Widget:
+
+
+<SearchOpcodes>:
+    name: "searchopcode"
+
+    MDBoxLayout:
+        orientation: "vertical"
+        spacing: dp(10)
+        padding: dp(20)
+        MDBoxLayout:
+            adaptive_height: True
+            MDIconButton:
+                icon: "backburger"
+                on_release: app.goto_home()
+
+            MDTextField:
+                id: search_field
+                hint_text: "Search Opcodes"
+                on_text: app.set_list_opcodes(self.text, True)
+
+        RecycleView:
+            id: list_of_present_opcodes
+            key_viewclass: "viewclass"
+            key_size: "height"
+
+            RecycleBoxLayout:
+                padding: dp(10)
+                default_size: None, dp(48)
+                default_size_hint: 1, None
+                size_hint_y: None
+                height: self.minimum_height
+                orientation: "vertical"
+
+
+<CsTerminalScreen>:
+    name: "csterminal"
+
+    MDBoxLayout:
+        orientation: "vertical"
+        spacing: dp(10)
+        padding: dp(20)
+        MDBoxLayout:
+            adaptive_height: True
+            MDIconButton:
+                icon: "backburger"
+                on_release: app.goto_home()
+
+            MDLabel:
+                id: status
+                text: "Running"
+                theme_text_color: "Primary"
+
+        RecycleView:
+            id: terminal_append
+            key_viewclass: "viewclass"
+            key_size: "height"
+
+            RecycleBoxLayout:
+                padding: dp(10)
+                default_size: None, dp(48)
+                default_size_hint: 1, None
+                size_hint_y: None
+                height: self.minimum_height
+                orientation: "vertical"
+
+
+<SettingScreen>
+    name: "settings"
+
+    ScrollView:
+        MDList:
+            OneLineListItem:
+                divider: None
+            OneLineListItem:
+                text: "App Settings :"
+                divider: None
+            OneLineListItem:
+                text: "Dark Mode"
+                divider: None
+                MDSwitch:
+                    id: darkswitch
+                    pos_hint: {"center_x": 0.85, "center_y": 0.5}
+                    on_active: app.dark_mode()
+
+            OneLineListItem:
+                text: "De Compiler Settings :"
+                divider: None
+            OneLineListItem:
+                text: "Force Error (write error lines)"
+                divider: None
+                MDSwitch:
+                    id: force_error_write_lines
+                    pos_hint: {"center_x": 0.85, "center_y": 0.5}
+
+    BoxLayout:
+        orientation: "vertical"
+        MDToolbar:
+            title: "Settings"
+            elevation: 10
+            left_action_items: [['arrow-left', lambda x: app.goto_home()]]
+        Widget:
+        
