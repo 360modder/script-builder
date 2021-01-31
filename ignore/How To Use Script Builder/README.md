@@ -21,10 +21,10 @@
 ## 7. You will see some logs
 ![Step 7](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step7.jpg)
 
-## 8. A file name cleo_script.txt will be generated
+## 8. A file named cleo_script.txt will be generated and do not rename it
 ![Step 8](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step8.jpg)
 
-## 9. Delete this line if you want to compile from script builder
+## 9. Delete this line if you want to compile from script builder or correct it
 ![Step 9](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step9.jpg)
 
 ## 10. Write your script but do not delete first two lines
@@ -36,7 +36,7 @@
 ## 12. You will see some logs
 ![Step 12](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step12.jpg)
 
-## 13. A file named generated.csa will be generated
+## 13. A file named generated.csa will be generated and do not rename it
 ![Step 13](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step13.jpg)
 
 ## 14. Click on download button to download template csa file
