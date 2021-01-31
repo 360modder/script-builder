@@ -9,40 +9,38 @@
 ## 3. Allow storage permissions
 ![Step 3](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step3.jpg)
 
-## 1. Get a cleo script
+## 4. Click on file button
 ![Step 4](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step4.jpg)
 
-## 1. Get a cleo script
+## 5. Mount your folder where you have select.sb file
 ![Step 5](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step5.jpg)
 
-## 1. Get a cleo script
+## 6. Click on decompile button
 ![Step 6](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step6.jpg)
 
-## 1. Get a cleo script
+## 7. You see some logs
 ![Step 7](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step7.jpg)
 
-## 1. Get a cleo script
+## 8. A file name cleo_script.txt will be generated
 ![Step 8](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step8.jpg)
 
-## 1. Get a cleo script
+## 9. Delete this line you want to compile from script builder
 ![Step 9](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step9.jpg)
 
-## 1. Get a cleo script
+## 10. Write your script but do not delete first two lines
 ![Step 10](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step10.jpg)
 
-## 1. Get a cleo script
+## 11. Get a cleo script
 ![Step 11](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step11.jpg)
 
-## 1. Get a cleo script
+## 12. Get a cleo script
 ![Step 12](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step12.jpg)
 
-## 1. Get a cleo script
+## 13. Get a cleo script
 ![Step 13](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step13.jpg)
 
-## 1. Get a cleo script
+## 14. Get a cleo script
 ![Step 14](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step14.jpg)
 
-## 1. Get a cleo script
+## 15. Get a cleo script
 ![Step 15](https://raw.githubusercontent.com/360modder/script-builder/main/ignore/How%20To%20Use%20Script%20Builder/images/step15.jpg)
-
-## 1. Get a cleo script
