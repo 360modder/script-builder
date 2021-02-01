@@ -21,6 +21,8 @@ Script Builder is an android app to build cleo scripts in android
 - [Sanny Builder Documentation](https://github.com/360modder/script-builder/raw/main/ignore/Sanny%20Builder%20Documentation.zip)
 - [Source Code](https://github.com/360modder/script-builder/archive/v0.1-beta.zip)
 
+[![Latest APK](https://user-images.githubusercontent.com/663460/26973090-f8fdc986-4d14-11e7-995a-e7c5e79ed925.png)](https://github.com/360modder/script-builder/releases/download/v0.1-beta/scriptbuilder-0.1-armeabi-v7a-release-optimized-signed.apk)
+
 ## Dependencies
 
 `pip install kivy kivymd plyer`
