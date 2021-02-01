@@ -278,7 +278,7 @@ class ScriptBuilder(MDApp):
                 script_type = script_content.copy()[1:2][0][7:12].encode("utf-8")
             except:
                 toast("please create a cleo_script.txt")
-                script_content = ["", ""]
+                script_content = ["", "", "", ""]
                 script_type = ".csa}".encode("utf-8")
                 script_not_found = False
 
@@ -306,7 +306,7 @@ class ScriptBuilder(MDApp):
                     else:
                         out_file.write(current_line)
 
-                for current_line in script_content[2:]:
+                for current_line in script_content[1:]:
                     out_file.write(current_line.encode("utf-8"))
 
                 out_file.write(main_cs_file_content.copy()[-1:][0])
