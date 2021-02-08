@@ -8,7 +8,7 @@ Script Builder is an android app to build cleo scripts in android
 ## Supported Features
 
 - Decompiling
-- Compiling
+- Compiling [Unstable]
 - Opcode Search
 
 [Don't Know How To Use ?](https://github.com/360modder/script-builder/tree/main/ignore/How%20To%20Use%20Script%20Builder)
