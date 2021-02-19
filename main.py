@@ -4,6 +4,7 @@ import sys
 import webbrowser
 import plyer
 import shutil
+import threading
 
 from kivy.lang.builder import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
@@ -92,6 +93,9 @@ class ScriptBuilder(MDApp):
                 if self.back_count == 4:
                     ScriptBuilder.get_running_app().stop()
 
+            if self.multipleScreens.current == "settings":
+            	self.on_stop()
+            	
             return True
 
 
@@ -115,7 +119,7 @@ class ScriptBuilder(MDApp):
                                       message=f"select.sb i.e. template file is saved in downloads folder",
                                       timeout=2)
         except:
-            toast("unable to download file")
+            toast("unable to download file or maybe downloaded, please check downloads folder")
 
 
     # App Menu
@@ -194,10 +198,10 @@ class ScriptBuilder(MDApp):
 
 
     def about_this_app(self):
-        dialog = MDDialog(title="Script Builder Beta v0.1",
+        dialog = MDDialog(title="Script Builder Beta v0.119",
                         text="This is beta testing apk for building cleo scripts for gta sa android.\n\n"
                             "All the data used to make this app is taken from sanny builder official website and other references.\n\n"
-                            "This app is released on 31-01-2021 and created using python, kivy v2.0.0 and kivymd v0.104.1\n\n"
+                            "This app is released on 19-02-2021 and created using python, kivy v2.0.0 and kivymd v0.104.1\n\n"
                             "Contact 360modder for futher assistance at apoorv9450@gmail.com\n\n"
                             "Development is done by 360modder",
                         size_hint=(0.8, 1),
@@ -250,7 +254,7 @@ class ScriptBuilder(MDApp):
 
 
     # Main Compilers
-    def user_compile(self):
+    def user_compile_seudo(self):
         self.multipleScreens.get_screen("csterminal").ids.status.text = "Running"
 
         if self.script_folder == "":
@@ -276,10 +280,12 @@ class ScriptBuilder(MDApp):
                 txt_file = open(select_file)
                 script_content = txt_file.readlines()
                 script_type = script_content.copy()[1:2][0][7:12].encode("utf-8")
-            except:
+                script_name = script_content.copy()[2:3][0][19:].replace("'\n", "").encode("utf-8")
+            except FileNotFoundError:
                 toast("please create a cleo_script.txt")
                 script_content = ["NULL", "NULL", "NULL", "NULL"]
                 script_type = ".csa}".encode("utf-8")
+                script_name = "SCRIPTNAME".encode("utf-8")
                 script_not_found = False
 
             out_file = self.script_folder + "/generated" + script_type.replace(b"}", b"").replace(b"\n", b"").decode("utf-8")
@@ -292,19 +298,26 @@ class ScriptBuilder(MDApp):
                     if b"{$CLEO" in current_line:
                         script_started = True
                         if b"{$CLEO .cs}" in current_line:
-                            out_file.write(current_line.replace(b".cs}", script_type))
+                            current_line = current_line.replace(b".cs}", script_type)
                         elif b"{$CLEO .csa}" in current_line:
-                            out_file.write(current_line.replace(b".csa}", script_type))
+                            current_line = current_line.replace(b".csa}", script_type)
                         elif b"{$CLEO .csi}" in current_line:
-                            out_file.write(current_line.replace(b".csi}", script_type))
-                        else:
-                            out_file.write(current_line)
+                            current_line = current_line.replace(b".csi}", script_type)
+
+                        if b"SCRIPTNAME" in current_line:
+                            current_line = current_line.replace(b"SCRIPTNAME", script_name)
+
+                        out_file.write(current_line)
+
                         continue
                         
                     if script_started:
                         pass
                     else:
                         out_file.write(current_line)
+
+                if b"SCRIPTNAME" in current_line:
+                    current_line = current_line.replace(b"SCRIPTNAME", script_name)
 
                 for current_line in script_content[2:]:
                     out_file.write(current_line.encode("utf-8"))
@@ -334,7 +347,7 @@ class ScriptBuilder(MDApp):
             pass
 
 
-    def user_decompile(self):
+    def user_decompile_seudo(self):
         self.multipleScreens.get_screen("csterminal").ids.status.text = "Running"
 
         if self.script_folder == "":
@@ -361,7 +374,7 @@ class ScriptBuilder(MDApp):
                     for current_line in f.readlines():
 
                         if b"{$CLEO" in current_line:
-                            dc_file.write("// This file was decompiled using script builder beta v0.1 published by 360modder on 31-01-2021\n")
+                            dc_file.write("// This file was decompiled using script builder beta v0.119 published by 360modder on 19-02-2021\n")
                             script_found = True
                             current_line = f"{current_line}".split("{$CLEO")
                             current_line = ("{$CLEO" + current_line[1] + "\n").replace(r"\r\n'", "")
@@ -419,6 +432,16 @@ class ScriptBuilder(MDApp):
                     pass
         else:
             pass
+
+
+    def user_compile(self):
+    	task = threading.Thread(target=self.user_compile_seudo)
+    	task.start()
+
+
+    def user_decompile(self):
+    	task = threading.Thread(target=self.user_decompile_seudo)
+    	task.start()
 
 
 if __name__ == '__main__':
