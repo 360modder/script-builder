@@ -25,7 +25,7 @@ Script Builder is an android app to build cleo scripts in android
 
 ## Dependencies
 
-`pip install kivy kivymd plyer`
+`pip install -r requirements.txt`
 
 ## Badges
 
